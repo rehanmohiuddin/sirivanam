@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator@Sirivanam</title>
+    </head>
+    <style>
+        body{
+            background-color: #001f3f;
+        }
+    </style>
+    <body>
+        <script language="JavaScript">
+            <!--
+            function showpay() {
+             if ((document.calc.loan.value == null || document.calc.loan.value.length == 0) ||
+                 (document.calc.months.value == null || document.calc.months.value.length == 0)
+            ||
+                 (document.calc.rate.value == null || document.calc.rate.value.length == 0))
+             { document.calc.pay.value = "Incomplete data";
+             }
+             else
+             {
+             var princ = document.calc.loan.value;
+             var term  = document.calc.months.value;
+             var intr   = document.calc.rate.value / 1200;
+             document.calc.pay.value = princ * intr / (1 - (Math.pow(1/(1 + intr), term)));
+             }
+            
+            // payment = principle * monthly interest/(1 - (1/(1+MonthlyInterest)*Months))
+            
+            }
+            
+            // -->
+            </script>
+            
+            <h1 align="center" style="color: white;">Sirivanam Infra Pvt Ltd EMI Calculator</h1>
+            <p>
+            <center>
+            <form name=calc method=POST>
+            <table width=100% height=50% border=0>
+            <tr><th bgcolor="#aaaaaa" width=50%><font color=blue>Description</font></th>
+            <th bgcolor="#aaaaaa" width=50%><font color=blue>Data Entry</font></th></tr>
+            <tr><td bgcolor="#eeeee">Amount</td><td bgcolor="#aaeeaa" align=center><input
+            type=text name=loan
+            size=10></td></tr>
+            <tr><td bgcolor="#eeeee">Period in Months</td><td bgcolor="#aaeeaa"
+            align=center><input type=text
+            name=months size=10></td></tr>
+            <tr><td bgcolor="#eeeee">Interest Rate</td><td bgcolor="#aaeeaa" align=center><input
+            type=text name=rate
+            size=10></td></tr>
+            <tr><td bgcolor="#eeeee">Monthly Payment</td><td bgcolor="#eeaaaa"
+            align=center><em>Calculated</em> <input
+            type=text name=pay size=10></td></tr>
+            <tr><td  bgcolor="#aaeeaa"align=center><input type=button onClick='showpay()'
+            value=Calculate></td><td bgcolor="#eeeeaa" align=center><input type=reset
+            value=Reset></td></tr>
+            </table>
+            </form>
+            <font size=1 style="color: white;">Enter only numeric values (no commas), using decimal points
+            where needed.<br>
+            Non-numeric values will cause errors.</font>
+            </center>
+            
+        
+    </body>
+</html>

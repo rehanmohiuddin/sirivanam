@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirivanam Infra Pvt Ltd</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="sirimain.jpg">
+    <script src="https://kit.fontawesome.com/670c39e75d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo" style="text-decoration: none;">
+            <img src="sirimain.jpg" alt="">
+            <p>Sirivanam</p>
+        </a>
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Projects</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="projects.html">Ongoing Projects</a>
+                    </li>
+                    <li>
+                        <a href="up.html">Upcoming Projects</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contactus" id="ctu">Contact Us</a></li>
+            <li><a href="payment.html" target="blank">Payments</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="containers">
+            <div class="slider">
+                <div class="slide slide1"></div>
+                <div class="slide slide2"></div>
+                <div class="slide slide3"></div>
+                <div class="slide slide4"></div>
+                <div class="slide slide1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="head">
+        <h2>A Glimpse Of Our Project</h2>
+        <video autoplay muted loop class="vid">
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section class="sec1" id="services">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Our Service Offers</h3>
+            </div>
+            <div class="services">
+                <div class="box">
+                    <div class="iconbx">
+                        <img src="choose.svg" alt="">
+                    </div>
+                    <div class="contents1">
+                        <h2>Choose Your Preferences</h2>
+                        <p>The perfect ambience for the ultimate indulgence.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconbx">
+                        <img src="carbon-footprint.svg" alt="">
+                    </div>
+                    <div class="contents1">
+                        <h2>No Pollution</h2>
+                        <p>Live an environmental-friendly life with low carbon footprint.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="iconbx">
+                        <img src="plant.svg" alt="">
+                    </div>
+                    <div class="contents1">
+                        <h2>Care For Trees</h2>
+                        <p>Our responsibility to grow the plants and taking care of them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section sec1 parallax parallax-1" id="about">
+        <div class="container1">
+            <h1>About Us</h1>
+            <div class="wrapper">
+                <h2>We Develop <span></span></h2>
+                <p>Built on the strong foundation of trust, innovation, and knowledge, SIRIVANAM INFRA PVT. LTD. is a reputed group that is committed to providing contemporary, customer-centric and cost-effective business solutions. Their core strength lies in uncompromising business ethics and transparency in all spheres of business conduct. Their focus is to blend hard work, skill, experience, and customer relationships to fulfill the requirements of every client and forthcoming projects. SIRIVANAM INFRA PVT. LTD.proudly present to you their latest venture -Brundavanam - a urban farmland near Sadasivpet. It is an idyllic weekend getaway surrounded by lush foliage, fresh air, and an abundance of natural light. Brundavanam is an eco-friendly project of 100 acres that offers luxuriant plots with fruit-bearing trees coupled with the option to build a bespoke villa.</p>
+            </div>
+            <div class="slides">
+                <img src="siri9.jpg" alt="Slide 2"/>
+                <img src="siri10.jpg" alt="Slide 1"/>
+              </div>
+        </div>    
+    </section>
+    <section>
+        <div class="contain">
+            <a href="emical.html" target="blank"><button class="btns btn1">EMI Calculator</button></a>
+            <a href="#events"><button class="btns btn2" id="events">Events</button></a>
+            <a href="news.html" target="blank"><button class="btns btn3">News</button></a>
+        </div>
+    </section>
+    <section class="sec1 contact" id="contactus">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Send Us Message</h3>
+            </div>
+            <div class="contactform">
+                <form action="index1.php" method="POST">
+                    <div class="row100">
+                        <div class="inputbx50">
+                            <input type="text" name="name" required placeholder="Full Name">
+                        </div>
+                        <div class="inputbx50">
+                            <input type="email" name="mail" required placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputbx100">
+                            <input type="tel" name="number" required placeholder="Contact Number">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputbx100">
+                           <textarea name="message" required placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputbx100">
+                            <input type="submit" name="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="contact" id="blur">
+                <h1>Contact Us At :</h1>
+                <p>
+                    Plot No.88, 1st Floor,<br>Vishwam Towers,<br>
+                    Matrusri Co-op,<br>House Building Society Limited,<br>
+                    Miyapur, Hyderabad - 500049,<br>Telangana, India.
+                </p>
+                <a href="#blur" onclick="toggle1()">Click To Know Mail Address</a>
+            </div>
+            <div id="popup">
+                <h2>Mail Us At :</h2>
+                <a href="mailto:Chairman@sirivanaminfra.com">chairman@sirivanaminfra.com</a>
+                   <a href="mailto:ceo@sirivanaminfra.com">ceo@sirivanaminfra.com</a>
+                   <a href="mailto:ed@sirivanaminfra.com">ed@sirivanaminfra.com</a>
+                   <a href="mailto:md@sirivanaminfra.com">md@sirivanaminfra.com</a>
+                   <a href="mailto:info@sirivanaminfra.com">info@sirivanaminfra.com</a>
+                   <a href="mailto:accounts@sirivanaminfra.com">accounts@sirivanaminfra.com</a>
+                   <a href="mailto:admin@sirivanaminfra.com">admin@sirivanaminfra.com</a>
+                   <a href="mailto:dm@sirivanaminfra.com">dm@sirivanaminfra.com</a>
+                   <a href="mailto:registrations@sirivanaminfra.com">registrations@sirivanaminfra.com</a>
+                   <a href="#blur" class="btn" onclick="toggle1()" style="color: #fff;">Close</a>
+            </div>
+            <div class="phone">
+                <h1>Call Us At :</h1>
+                <a href="tel:+91 9951112348">+91 9951112348</a>
+            </div>
+            <div class="contactinfo">
+                <div class="card">
+                    <a href="https://www.google.com/maps/place/SIRIVANAM+INFRA+Pvt+ltd/@17.4951811,78.3621998,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb93afdfa6311d:0xa4d468e38c3d6cd4!8m2!3d17.4951811!4d78.3643885" target="blank" style="color: #fff;"><i class="card-icon fas fa-map-marker-alt" style="margin-top: -25px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script>
+        function toggle1(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+    <script async>(function(w, d) { w.CollectId = "5e74994efef17e422a58eb0f"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+<script>
+    function btn3(){
+        window.open("news.html");
+    }
+    function btn1(){
+        window.open("emical.html");
+    }
+</script>
+
+
+</body>
+</html>
