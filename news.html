@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News@Sirirvanam</title>
+    </head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:bold,medium');
+
+h2{
+  font-family: 'Libre Franklin', sans-serif;   
+  text-align: center;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.h1__underline{
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  display: block;
+  margin-bottom: 50px;
+}
+    .articles {
+  
+	display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	
+}
+.ti{
+    color: #000000;
+}
+.news {
+    background: #ffffff;
+    align-content: center;
+    margin-left: 5px;
+	width: 300px;
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid lightgrey;
+}
+
+img {
+	max-width: 300px;
+}
+h1{
+  font-family: 'Libre Franklin', sans-serif;   
+  text-align: center;
+  margin-bottom: 5px;
+  color: #283D4A;
+}
+
+body
+{
+    color: #ffffff;
+    margin-left: 50px;
+    align-content: center;
+  margin:0;
+  overflow-X:hidden;
+  font-family:"Raleway","Roboto","Helvetica",sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -ms-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  background:#001f3f;
+  
+  background-blend-mode:overlay;
+  background-size:15%;
+}
+
+
+/*End of Section*/
+</style>
+<h1 style="color: #ffffff;margin-top: 50px;" >SIRIVANAM INFRA Pvt ltd</h1>
+
+<h2>Top Headlines:-</h2>
+<img class="h1__underline" src="https://i.imgur.com/nWZno3A.png">
+
+<article class="articles">
+ 
+</div>
+<script>
+    const key = "6602af5b3fb24ade92cc213fbb1ad60f"
+const url = 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=6602af5b3fb24ade92cc213fbb1ad60f';
+
+const recievedNews = (newsdata) => {
+    const articlesDiv = document.querySelector(".articles")
+    newsdata.articles.forEach((article) => {
+			
+			//Here we create and add html elements to our html file
+      const div = document.createElement("div")
+      div.className = "news"
+      div.innerHTML = `
+      <img src="${article.urlToImage}"/>
+			<h2 class ="ti">${article.title}</h2>`
+      articlesDiv.appendChild(div)
+			
+    })
+}
+
+//Fetch sends a request to the API.
+//Promise makes it possible to run this in the background. När vi får APIet då går den vidare och skickar tillbaka JSON.
+fetch(url)
+  .then(response => response.json())
+  .then(recievedNews)
+
+</script>
+</html>

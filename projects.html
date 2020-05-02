@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirivanam Infra Pvt Ltd</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="sirimain.jpg">
+    <script src="https://kit.fontawesome.com/670c39e75d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase-auth.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</head>
+<style>
+  .img1{
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-blend-mode: multiply;
+  }
+
+  @media (max-width: 913px){
+    .img1{
+      margin-top: 28vh;
+    }
+
+    .about .bg p{
+      margin-top: 39vh;
+      z-index: 1;
+      padding-top: 10px;
+    }
+  }
+ 
+</style>
+<body id="body">
+    <header id="header">
+      <a href="#" class="logo" style="text-decoration: none;">
+          <img src="sirimain.jpg" alt="">
+          <p>Sirivanam</p>
+      </a>
+        <ul class="nav-list">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#">Projects</a>
+              <ul class="sub-menu" style="z-index: 999999;">
+                  <li>
+                      <a href="projects.html">Ongoing Projects</a>
+                  </li>
+                  <li>
+                      <a href="up.html">Upcoming Projects</a>
+                  </li>
+              </ul>
+            </li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="#contactus" id="ctu">Contact Us</a></li>
+        </ul>
+    </header>
+    <section style="margin-top: -100vh;">
+        
+        <slider style="z-index: 1;">
+            <slide><img id="img1" class="img1"></slide>
+            <slide><img id="img2" class="img1"></slide>
+            <slide><img id="img3" class="img1"></slide>
+            <slide><img id="img4" class="img1"></slide>
+            <slide><img id="img5" class="img1"></slide>
+      
+        </slider>
+    </section>
+    <section class="about">
+        <div class="bg">
+            <h3>About Brindavanam</h3>
+            <p> Walk inside the majestic arch of Brundavanam and a whole new world awaits you. Discover the lush, green lands - a verdant expanse of 100 acres of unpolluted goodness. Located near Sadashivpet, Brundavanam is a pristine venture of peace and tranquillity, a dream only a few can afford. This organic farmland is a secure gated community with extensive open plots. Each plot includes the option to grow the choicest of trees and to build your own customizable villa. An impeccable land like this, with all modern facilities and amenities, away from the bustling polluted cityscape and yet having exceptional connectivity, makes it a sensible investment for tomorrow that offers guaranteed returns in the future. Brundavanam is an ideal place for tranquil living and the best place for your children to grow with nature.</p>
+        </div>
+        <h3 style="margin-top: 0vh; color: #000;">Amenities</h3>
+        <div class="services">
+            <div class="box" style="width: 350px; background-color: #fff;">
+                <div class="iconbx">
+                    <img src="kids-play-area.png" alt="" style="display: block;margin: auto;width: 100px;height: 100px;">
+                </div>
+                <div class="contents1" style="text-align: center;padding: 5px;">
+                    <h2 style="color: #000;">Kid's Play Area</h2>
+                </div>
+            </div>
+            <div class="box" style="width: 350px; background-color: #fff;">
+                <div class="iconbx">
+                    <img src="jogging-track.png" alt="" style="display: block;margin: auto;width: 100px;height: 100px;">
+                </div>
+                <div class="contents1" style="text-align: center;padding: 5px;">
+                    <h2 style="color: #000;">Jogging Track</h2>
+                </div>
+            </div>
+            <div class="box" style="width: 350px; background-color: #fff;">
+                <div class="iconbx">
+                    <img src="24hrs-security.png" alt="" style="display: block;margin: auto;width: 100px;height: 100px;">
+                </div>
+                <div class="contents1" style="text-align: center;padding: 5px;">
+                    <h2 style="color: #000;">24x7 Security</h2>
+                </div>
+            </div>
+            <div class="box" style="width: 350px; background-color: #fff;">
+                <div class="iconbx">
+                    <img src="wide-road.png" alt="" style="display: block;margin: auto;width: 100px;height: 100px;">
+                </div>
+                <div class="contents1" style="text-align: center;padding: 5px;">
+                    <h2 style="color: #000;">40' & 20' Roads</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+        <h3 style="margin-top: 0;color: #fff;">Highlights</h3>
+        <div class="highlights block">
+            <div class="move m1">
+                <div class="num">01</div>
+                <div class="txt">Environment-Friendly Ambience | Entrance Arch</div>
+            </div>
+            <div class="move m2">
+                <div class="num">02</div>
+                <div class="txt">100% Vaastu Compliant | 40' and 20' Roads</div>
+            </div>
+            <div class="move m3">
+                <div class="num">03</div>
+                <div class="txt">Spot Registration | Chain Link Fencing</div>
+            </div>
+        </div>
+        </div>
+        <div class="location">
+            <h3 style="margin-top: 0;color:#000">Location Advantages</h3>
+            <div class="movctr">
+                <div>1) Excellent Access Of The Four Lane Road To Reach ORR</div>
+                <div>2) Very Near To Financial District, Bhel, Patancheru</div>
+                <div>3) A Few Km Away From Woxsen Bussiness School and NIMZ</div>
+                <div>4) 1Km From Mumbai Highway</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.5297245176866!2d77.86304681487971!3d17.62505268793656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcd64925a5c57006!2sBrundavanam%20Urban%20Farmland!5e0!3m2!1sen!2sin!4v1584078908314!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border: 0; padding: 10px; margin-left: 29vw; border-color: #000; box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+    <section class="sec1 contact" id="contactus">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Contact Us At</h3>
+            </div>
+            <div class="contact" id="blur">
+                <h1>Mail Us At :</h1>
+                <p>
+                    Aroor - Patlur rd,<br>Sadashivpet,<br>
+                    Sangareddy - 502291,<br>Telangana,
+                    India.
+                </p>
+                <a href="#blur" onclick="toggle1()">Click To Know Mail Address</a>
+            </div>
+            <div id="popup">
+                <h2>Mail Us At :</h2>
+                <a href="mailto:Chairman@sirivanaminfra.com">Chairman@sirivanaminfra.com</a>
+                   <a href="mailto:Ceo@sirivanaminfra.com">Ceo@sirivanaminfra.com</a>
+                   <a href="mailto:Ed@sirivanaminfra.com">Ed@sirivanaminfra.com</a>
+                   <a href="mailto:Md@sirivanaminfra.com">Md@sirivanaminfra.com</a>
+                   <a href="mailto:info@sirivanaminfra.com">info@sirivanaminfra.com</a>
+                   <a href="mailto:accounts@sirivanaminfra.com">accounts@sirivanaminfra.com</a>
+                   <a href="mailto:admin@sirivanaminfra.com">admin@sirivanaminfra.com</a>
+                   <a href="mailto:dm@sirivanaminfra.com">dm@sirivanaminfra.com</a>
+                   <a href="mailto:registrations@sirivanaminfra.com">registrations@sirivanaminfra.com</a>
+                   <a href="#blur" class="btn" onclick="toggle1()" style="color: #fff;">Close</a>
+            </div>
+            <div class="phone">
+                <h1>Call Us At :</h1>
+                <a href="tel:+91 9951112348">+91 9951112348</a>
+            </div>
+            <div class="contactinfo">
+                <div class="card">
+                    <a href="https://www.google.com/maps/place/Brundavanam+Urban+Farmland/@17.625053,77.865236,16z/data=!4m5!3m4!1s0x0:0xcd64925a5c57006!8m2!3d17.6250527!4d77.8652355?hl=en" target="blank" style="color: #fff; margin-top: -25px;"><i class="card-icon fas fa-map-marker-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+    <script>
+        function toggle1(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+<script>
+          var co,i;
+            var version = 'v4'
+
+      var firebaseConfig = {
+            apiKey: "AIzaSyBjvWCDq85VdlPO2KfmF_sF58xRXduWGMA",
+            authDomain: "apror-b5390.firebaseapp.com",
+            databaseURL: "https://apror-b5390.firebaseio.com",
+            projectId: "apror-b5390",
+            storageBucket: "apror-b5390.appspot.com",
+            messagingSenderId: "578081307594",
+            appId: "1:578081307594:web:96afd96f93346bb8"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+
+      var limit = 500;
+      var count = 0;
+      var trueData = 3;
+      var flag = true;
+      var articles = [];
+      var c=firebase.database().ref('/v4/article_group/article_list');
+      firebase.database().ref('/v4/article_group/article_list')
+        .orderByChild('published').limitToLast(limit).startAt(1)
+        .on('child_added', function(data) {
+          
+          firebase.database().ref('/v4/article_group/article/' + data.key)
+            .on('value', function(articleData) {
+              count ++;
+              articles.push({
+                id: data.key,
+                published: data.val().published,
+                data: articleData.val()
+              });
+              articles.sort(function(a, b) {
+                return a.published < b.published
+              });
+              producer();
+              
+            }, function(err) {
+              count ++;
+              showError(err);
+              producer()
+            });
+        }, function(err) {
+          alert(err);
+        })
+        
+      function producer() {
+        console.log(count, trueData)
+        //if (count === trueData && flag) {
+          for (var i in articles) {
+            createArticle(articles[i].id, articles[i].published, articles[i].data)
+            console.log(articles[i].data.body);
+            document.getElementById("img").src=articles[i].data.title;
+          }
+          flag = false
+        //}
+      }
+        
+      function showError(err) {
+        var el = document.createElement('div');
+        el.innerHTML = err.message
+        document.getElementById('content').appendChild(el)
+      }
+        
+      function createArticle(id, published, data) {
+        console.log(id)
+        var el = document.createElement('div');
+        var title = document.createElement('h1');
+        var body = document.createElement('p');
+        var byline = document.createElement('span');
+        title.innerHTML = data.title;
+        body.innerHTML = data.body;
+        byline.innerHTML = 'id: ' + id + '<br>Date: '+ new Date(published) +'<hr>';
+        el.appendChild(title)
+        el.appendChild(byline)
+        el.appendChild(body)
+        document.getElementById('content').appendChild(el)
+
+      }
+
+      var submitButton = document.querySelector('#submit-button');
+      var titleText = document.querySelector('#title');
+      var bodyText = document.querySelector('#body');
+      var ref = firebase.database().ref('/count/count');
+      var ar=new Array();
+
+      ref1=firebase.database().ref('/v4/article_group/article');
+      ref1.on("value", function(snapshot) {
+          for(var k=0;k<ar.length;i++){
+            ar[k]=snapshot.val();
+          }
+        console.log(ar);
+      }, function (error) {
+        console.log("Error: " + error.code);
+      });
+      ref.on("value", function(snapshot) {
+        co=0;
+        co=snapshot.val();
+        console.log(co);
+        for(i=1;i<=co;i++){
+        console.log(i);
+        firebase.database().ref('/v4/article_group/article/1')
+            .on('value', function(snapshot){
+              var j=i;
+              console.log(snapshot.child('im1').val());
+              var x1=snapshot.child('im1').val()
+              var x2=snapshot.child('im2').val()
+              var x3=snapshot.child('im3').val()
+              var x4=snapshot.child('im4').val()
+              var x5=snapshot.child('im5').val()
+              var x6=snapshot.child('body').val();
+              console.log(snapshot.child('im2').val());
+              document.getElementById("img1").src=x1;
+              document.getElementById("img2").src=x2;
+              document.getElementById("img3").src=x3;
+              document.getElementById("img4").src=x4;
+              document.getElementById("img5").src=x5;
+                  var img1 = new Image(); 
+                  img.src = x1; 
+                  console.log(x1);
+                  document.getElementById('body').appendChild(img1); 
+                  var img2 = new Image(); 
+                  img.src = x2; 
+                  document.getElementById('body').appendChild(img2); 
+                  var img3 = new Image(); 
+                  img.src = x3; 
+                  document.getElementById('body').appendChild(img3); 
+                  var img4 = new Image(); 
+                  img.src = x4; 
+                  document.getElementById('body').appendChild(img4); 
+                  var img5 = new Image(); 
+                  img.src = x5;
+                  document.getElementById('body').appendChild(img5); 
+                    var para = document.createElement("p");
+                    var node = document.createTextNode(x6);
+                    para.appendChild(node);
+
+                    var element = document.getElementById('body');
+                    element.appendChild(para);
+                  
+            },function (error){
+              console.log(error.code);
+            });
+      ref.on("value", function(snapshot) {
+        console.log(snapshot.val().data.key);
+      }, function (error) {
+        console.log("Error: " + error.code);
+      });
+      }
+      }, function (error) {
+        console.log("Error: " + error.code);
+      });
+            console.log(co); 
+
+
+  </script>
+    </body>
+    </html>
