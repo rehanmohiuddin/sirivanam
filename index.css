@@ -166,6 +166,7 @@ header.sticky .nav-list li:hover > .sub-menu{
     width: 500%;
     height: 100%;
     animation: animate 15s linear infinite;
+    margin-top: 150px;
 }
 
 .containers .slider .slide{
@@ -482,10 +483,35 @@ slide p{
     margin-bottom: 50px;
 }
 
+.services .bgimg:nth-child(5){
+    background-image: url(ClubHouse.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
+.services .bgimg:nth-child(6){
+    background-image: url(Greenery.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
 .services .box:hover{
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);
     width: 350px;
     transition: 0.3s linear;
+}
+
+.services .hoverc:hover{
+    background-color: #454545;
+}
+
+.services .hoverc:hover h2,
+.services .hoverc:hover p{
+    color: #fff;
 }
 
 .services .box .iconbx img{
@@ -498,6 +524,16 @@ slide p{
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.services .bgimg p{
+    color: #ffffff;
+    display: none;
+}
+
+.services .bgimg:hover p{
+    transition: 0.6s all;
+    display: block;
 }
 
 .container1{
@@ -1362,6 +1398,10 @@ p{
         color: #000;
     }
 
+    .nav-list li{
+        margin-top: 20px;
+    }
+
     .nav-list li:hover > .sub-menu{
         width: 100vw;
         left: -3.2rem;
@@ -1471,6 +1511,10 @@ p{
         margin-right: 0;
         margin-right: 10px;
     }
+
+    .containers .slider{
+        margin-top: 0;
+    }
     
 }
 
@@ -1526,6 +1570,7 @@ p{
 }
 
 @media (width: 320px){
+
 
     header ul li{
         margin-left: -8vw;
