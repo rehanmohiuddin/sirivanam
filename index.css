@@ -160,7 +160,6 @@ header.sticky .nav-list li:hover > .sub-menu{
 }
 
 .containers .slider{
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -433,8 +432,10 @@ slide p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
-    max-width: 100%;
+    max-width: 1050px;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services .box{
@@ -445,8 +446,37 @@ slide p{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
 }
 
+.services .bgimg:nth-child(1){
+    background-image: url(PlayArea.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(2){
+    background-image: url(Jogging.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(3){
+    background-image: url(Security.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(4){
+    background-image: url(Road.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
 .services .box:hover{
-    background-color: #333333;
+    background: #333333;
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);
     width: 350px;
     transition: 0.3s linear;
@@ -1266,7 +1296,7 @@ p{
     header .logo img{
         height: 30px;
         width: 100px;
-        margin-top: -7vh;
+        margin-top: -6vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1274,8 +1304,8 @@ p{
     }
 
     header .logo p{
-        height: 30px;
-        margin-top: -7vh;
+        font-size: 1.1em;
+        margin-top: -5vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1457,7 +1487,7 @@ p{
     header .logo img{
         height: 30px;
         width: 100px;
-        margin-top: 10vh;
+        margin-top: 11vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1465,13 +1495,15 @@ p{
     }
 
     header .logo p{
-        height: 30px;
-        margin-top: 10vh;
+        font-size: 2.5em;
+        margin-top: 15vh;
         position: absolute;
         display: block;
-        margin-left: 12vw;
         width: 50%;
         display: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     header.sticky .logo p{
@@ -1587,7 +1619,7 @@ p{
     header .logo img{
         height: 80px;
         width: 100px;
-        margin-top: -7vh;
+        margin-top: -6vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1596,6 +1628,7 @@ p{
 
     header .logo p{
         height: 80px;
+        font-size: 2.2em;
         margin-top: -7vh;
         position: absolute;
         display: block;
