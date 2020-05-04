@@ -160,13 +160,13 @@ header.sticky .nav-list li:hover > .sub-menu{
 }
 
 .containers .slider{
-    
     position: absolute;
     top: 0;
     left: 0;
     width: 500%;
     height: 100%;
     animation: animate 15s linear infinite;
+    margin-top: 150px;
 }
 
 .containers .slider .slide{
@@ -433,11 +433,13 @@ slide p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
-    max-width: 100%;
+    max-width: 1050px;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.services .box{
+.services .hoverc{
     width: 300px;
     margin: 0 auto;
     background: #ffffff;
@@ -445,16 +447,71 @@ slide p{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
 }
 
+.services .bgimg{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.services .bgimg:nth-child(1){
+    background-image: url(PlayArea.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(2){
+    background-image: url(Jogging.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(3){
+    background-image: url(Security.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(4){
+    background-image: url(Road.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
+.services .bgimg:nth-child(5){
+    background-image: url(ClubHouse.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
+.services .bgimg:nth-child(6){
+    background-image: url(Greenery.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
 .services .box:hover{
-    background-color: #333333;
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);
     width: 350px;
     transition: 0.3s linear;
 }
 
-.services .box:hover h2,
-.services .box:hover p{
-    color: #ffffff;
+.services .hoverc:hover{
+    background-color: #454545;
+}
+
+.services .hoverc:hover h2,
+.services .hoverc:hover p{
+    color: #fff;
 }
 
 .services .box .iconbx img{
@@ -467,6 +524,16 @@ slide p{
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.services .bgimg p{
+    color: #ffffff;
+    display: none;
+}
+
+.services .bgimg:hover p{
+    transition: 0.6s all;
+    display: block;
 }
 
 .container1{
@@ -857,6 +924,30 @@ p{
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
+}
+
+.s-m{
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+    display: flex;
+    max-width: 700px;
+}
+
+.s-m a{
+    text-decoration: none;
+    font-size: 28px;
+    color: #f1f1f1;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 58px;
+    cursor: pointer;
+}
+
+.s-m a:hover{
+    transform: scale(1.2);
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -1266,7 +1357,7 @@ p{
     header .logo img{
         height: 30px;
         width: 100px;
-        margin-top: -7vh;
+        margin-top: -6vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1274,12 +1365,13 @@ p{
     }
 
     header .logo p{
-        height: 30px;
-        margin-top: -7vh;
+        font-size: 1em;
+        margin-top: -5vh;
         position: absolute;
+        margin-left: -12vw;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
         display: none;
     }
 
@@ -1307,6 +1399,10 @@ p{
         color: #000;
     }
 
+    .nav-list li{
+        margin-top: 20px;
+    }
+
     .nav-list li:hover > .sub-menu{
         width: 100vw;
         left: -3.2rem;
@@ -1330,17 +1426,6 @@ p{
         left: 32vw;
         border: 0.7rem solid transparent;
         border-bottom-color: black;
-    }
-
-    .services .box:hover{
-        background-color: #fff;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
-        width: 300px;
-    }
-
-    .services .box:hover .contents1 h2,
-    .services .box:hover .contents1 p{
-        color: #000;
     }
 
     iframe{
@@ -1427,6 +1512,10 @@ p{
         margin-right: 0;
         margin-right: 10px;
     }
+
+    .containers .slider{
+        margin-top: 3vh;
+    }
     
 }
 
@@ -1457,7 +1546,7 @@ p{
     header .logo img{
         height: 30px;
         width: 100px;
-        margin-top: 10vh;
+        margin-top: 11vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1465,12 +1554,14 @@ p{
     }
 
     header .logo p{
-        height: 30px;
-        margin-top: 10vh;
+        font-size: 2.5em;
+        margin-top: 15vh;
         position: absolute;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         display: none;
     }
 
@@ -1587,7 +1678,7 @@ p{
     header .logo img{
         height: 80px;
         width: 100px;
-        margin-top: -7vh;
+        margin-top: -6vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1596,11 +1687,14 @@ p{
 
     header .logo p{
         height: 80px;
+        font-size: 2.2em;
         margin-top: -7vh;
+        margin-left: auto;
+        margin-right: auto;
         position: absolute;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
         display: none;
     }
 
@@ -1741,10 +1835,12 @@ p{
     header .logo p{
         height: 80px;
         margin-top: -7vh;
+        margin-left: auto;
+        margin-right: auto;
         position: absolute;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
         display: none;
     }
 
