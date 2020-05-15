@@ -47,6 +47,7 @@ header .logo p{
     letter-spacing: 2px;
     transition: 0.6s;
     display: none;
+    text-align: center;
     margin-top: 20px;
 }
 
