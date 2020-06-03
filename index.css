@@ -926,7 +926,7 @@ p{
 
 .card{
     padding: 0 20px;
-    margin top: 40px;
+    margin : 70px;
     width: calc(33% - 20px);
     height: 200px;
     display: flex;
