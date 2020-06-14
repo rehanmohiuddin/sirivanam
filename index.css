@@ -11,12 +11,14 @@ html{
 
 body{
     background: #fff;
+
 }
 
 header{
     position: fixed;
     left: 0;
     width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,7 +142,9 @@ header.sticky ul li a{
 }
 .sub-menu a:hover{
     color: #eb3007;
+
 }
+
 
 .sub-menu{
     width: 20rem;
@@ -169,6 +173,7 @@ header.sticky ul li a{
     visibility: visible;
     line-height: 4;
     background-color: #90ee90;
+
 }
 
 header.sticky .nav-list li:hover > .sub-menu{
@@ -185,6 +190,7 @@ header.sticky .nav-list li:hover > .sub-menu{
     left: 0;
     transform: scaleX(0);
     transition: all 0.5s;
+
 }
 
 .nav-link::before{
@@ -229,6 +235,7 @@ header.sticky .nav-list li:hover > .sub-menu{
     height: 100%;
     float: left;
 }
+
 
 .containers .slider .slide.slide1{
     background-image: url(siri12.jpg);
@@ -633,6 +640,19 @@ section .container1 .wrapper{
     left: 50%;
     transform: translate(-15%, -15%);
 }
+section .contain .sai{
+margin-top:-170px;
+
+}
+section .contain .wrapper1 p{
+
+    color: #000000;
+    font-size: 18px;
+    margin-left:20em;
+    mergin-top:-40em;
+    line-height: 35px;
+
+}
 
 section .container1 .wrapper h2{
     padding: 0;
@@ -746,9 +766,12 @@ p{
 }
 
 .contain{
-    text-align: center;
+
+    float: left;
+    padding: 5px
     height: 100px;
-    margin-top: 50px;
+    margin-left:25px;
+    margin-top: 20px;
 }
 
 .btns{
@@ -1059,6 +1082,7 @@ p{
     max-width: 700px;
 }
 .last{
+
     color: white;
     text-align: center;
     text-top:100px;
@@ -1357,6 +1381,7 @@ p{
         margin-left: -8.5vw;
     }
 
+
     section .container1 .wrapper p{
         font-size: 8px;
         line-height: 3;
@@ -1601,6 +1626,7 @@ p{
         left: 32vw;
         border: 0.7rem solid transparent;
         border-bottom-color: black;
+        font-weight:bold;
     }
 
     iframe{
