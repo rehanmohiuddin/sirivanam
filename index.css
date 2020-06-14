@@ -935,6 +935,7 @@ p{
     align-items: center;
     color: #ffffff;
     cursor: pointer;
+    margin-top:-100px;
 }
 
 .card-icon{
@@ -1003,13 +1004,17 @@ p{
     display: flex;
     max-width: 700px;
 }
-
+.last{
+    color: white;
+    text-align: center;
+    text-top:100px;
+}
 .s-m a{
     text-decoration: none;
     font-size: 28px;
     color: #f1f1f1;
     width: 60px;
-    height: 60px;
+    height: 90px;
     text-align: center;
     transition: 0.4s all;
     line-height: 58px;
