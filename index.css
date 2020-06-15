@@ -740,6 +740,16 @@ span::before{
     align-items: center;
 }
 
+.sec2{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    min-height: 50vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .sec1 .content{
     position: relative;
     text-align: center;
@@ -768,7 +778,7 @@ p{
 .contain{
 
     float: left;
-    padding: 5px
+    padding: 5px;
     height: 100px;
     margin-left:25px;
     margin-top: 20px;
