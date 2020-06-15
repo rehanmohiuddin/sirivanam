@@ -18,7 +18,7 @@ header{
     position: fixed;
     left: 0;
     width: 100%;
-
+    font-size-adjust: initial;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +64,8 @@ header ul{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    
 }
 
 header ul li{
