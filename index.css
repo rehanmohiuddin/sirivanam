@@ -11,12 +11,14 @@ html{
 
 body{
     background: #fff;
+
 }
 
 header{
     position: fixed;
     left: 0;
     width: 100%;
+    font-size-adjust: initial;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +64,8 @@ header ul{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    
 }
 
 header ul li{
@@ -83,10 +86,66 @@ header ul li a{
 header.sticky ul li a{
     color: #000;
 }
+.bounce {
 
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #ffffff;
+            color: #255;
+}
+.bounce p {
+
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            margin: 0;
+            line-height: 70px;
+            text-align: center;
+			color:black;
+            -moz-transform: translateX(50%);
+            -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+            -moz-animation: bouncing-text 5s linear infinite alternate;
+            -webkit-animation: bouncing-text 5s linear infinite alternate;
+            animation: bouncing-text 10s linear infinite alternate;
+}
+
+@-moz-keyframes bouncing-text {
+            0% {
+                -moz-transform: translateX(50%);
+            }
+            100% {
+                -moz-transform: translateX(-50%);
+            }
+}
+
+@-webkit-keyframes bouncing-text {
+            0% {
+                -webkit-transform: translateX(50%);
+            }
+            100% {
+                -webkit-transform: translateX(-50%);
+            }
+}
+@keyframes bouncing-text {
+            0% {
+                -moz-transform: translateX(50%);
+                -webkit-transform: translateX(50%);
+                transform: translateX(50%);
+            }
+            100% {
+                -moz-transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+}
 .sub-menu a:hover{
     color: #eb3007;
+
 }
+
 
 .sub-menu{
     width: 20rem;
@@ -115,6 +174,7 @@ header.sticky ul li a{
     visibility: visible;
     line-height: 4;
     background-color: #90ee90;
+
 }
 
 header.sticky .nav-list li:hover > .sub-menu{
@@ -131,6 +191,7 @@ header.sticky .nav-list li:hover > .sub-menu{
     left: 0;
     transform: scaleX(0);
     transition: all 0.5s;
+
 }
 
 .nav-link::before{
@@ -160,13 +221,13 @@ header.sticky .nav-list li:hover > .sub-menu{
 }
 
 .containers .slider{
-    
     position: absolute;
     top: 0;
     left: 0;
     width: 500%;
     height: 100%;
     animation: animate 15s linear infinite;
+    margin-top: 150px;
 }
 
 .containers .slider .slide{
@@ -175,6 +236,7 @@ header.sticky .nav-list li:hover > .sub-menu{
     height: 100%;
     float: left;
 }
+
 
 .containers .slider .slide.slide1{
     background-image: url(siri12.jpg);
@@ -433,11 +495,13 @@ slide p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
-    max-width: 100%;
+    max-width: 1050px;
     margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.services .box{
+.services .hoverc{
     width: 300px;
     margin: 0 auto;
     background: #ffffff;
@@ -445,16 +509,71 @@ slide p{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
 }
 
+.services .bgimg{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.services .bgimg:nth-child(1){
+    background-image: url(PlayArea.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(2){
+    background-image: url(Jogging.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(3){
+    background-image: url(Security.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+
+.services .bgimg:nth-child(4){
+    background-image: url(Road.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
+.services .bgimg:nth-child(5){
+    background-image: url(ClubHouse.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
+.services .bgimg:nth-child(6){
+    background-image: url(Greenery.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    margin-bottom: 50px;
+}
+
 .services .box:hover{
-    background-color: #333333;
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.6);
     width: 350px;
     transition: 0.3s linear;
 }
 
-.services .box:hover h2,
-.services .box:hover p{
-    color: #ffffff;
+.services .hoverc:hover{
+    background-color: #454545;
+}
+
+.services .hoverc:hover h2,
+.services .hoverc:hover p{
+    color: #fff;
 }
 
 .services .box .iconbx img{
@@ -467,6 +586,21 @@ slide p{
     margin-bottom: 10px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.services .bgimg:hover{
+    width: 350px;
+    transition: 0.6s all;
+}
+
+.services .bgimg p{
+    color: #ffffff;
+    visibility: hidden;
+}
+
+.services .bgimg:hover p{
+    visibility: visible;
+    transition: 0.6s all;
 }
 
 .container1{
@@ -506,6 +640,19 @@ section .container1 .wrapper{
     position: absolute;
     left: 50%;
     transform: translate(-15%, -15%);
+}
+section .contain .sai{
+margin-top:-170px;
+
+}
+section .contain .wrapper1 p{
+
+    color: #000000;
+    font-size: 18px;
+    margin-left:20em;
+    mergin-top:-40em;
+    line-height: 35px;
+
 }
 
 section .container1 .wrapper h2{
@@ -594,6 +741,16 @@ span::before{
     align-items: center;
 }
 
+.sec2{
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    min-height: 50vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .sec1 .content{
     position: relative;
     text-align: center;
@@ -620,9 +777,12 @@ p{
 }
 
 .contain{
-    text-align: center;
+
+    float: left;
+    padding: 5px;
     height: 100px;
-    margin-top: 50px;
+    margin-left:25px;
+    margin-top: 20px;
 }
 
 .btns{
@@ -632,7 +792,7 @@ p{
     font-size: 20px;
     font-family: "montserrat";
     cursor: pointer;
-    margin: 10px;
+    margin: 10px auto;
     transition: 0.8s;
     position: relative;
     overflow: hidden;
@@ -682,6 +842,70 @@ p{
 .btn3{
     float: right;
     margin-right: 300px;
+}
+
+.sectiongrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containgrid{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    background: #f1f1f1;
+    box-shadow: 0 5px 30px rgb(106, 209, 111);
+    margin: 50px 0;
+}
+
+.containgrid .boxgrid{
+    position: relative;
+    width: 400px;
+    height: 320px;
+    background: #f1f1f1;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containgrid .boxgrid .imgbxgrid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.containgrid .boxgrid .imgbxgrid img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.containgrid .btngrid{
+    border: 1px solid rgb(106, 209, 111);
+    background: none;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+}
+
+.containgrid .btngrid1{
+    background-color: rgb(106, 209, 111);
+    color: #fff;
 }
 
 .contact{
@@ -785,11 +1009,12 @@ p{
     justify-content: center;
     padding: 0 20px;
     margin: -15vh auto auto auto;
+    /*margin-top :50px*/
 }
 
 .card{
     padding: 0 20px;
-    margin: 0 10px;
+    margin : 70px;
     width: calc(33% - 20px);
     height: 200px;
     display: flex;
@@ -798,6 +1023,7 @@ p{
     align-items: center;
     color: #ffffff;
     cursor: pointer;
+    margin-top:-150px;
 }
 
 .card-icon{
@@ -857,6 +1083,81 @@ p{
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
+}
+
+.s-m{
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-around;
+    display: flex;
+    max-width: 700px;
+}
+.last{
+
+    color: white;
+    text-align: center;
+    text-top:100px;
+}
+.s-m a{
+    text-decoration: none;
+    font-size: 28px;
+    color: #f1f1f1;
+    width: 60px;
+    height: 90px;
+    text-align: center;
+    transition: 0.4s all;
+    line-height: 58px;
+    cursor: pointer;
+}
+
+.s-m a:hover{
+    transform: scale(1.2);
+}
+
+.whole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.containBx{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.containBx .cardBx{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.containBx .cardBx:nth-child(even){
+    flex-direction: column-reverse;
+}
+
+.containBx .cardBx .imageBx{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #000;
+    margin: 10px;
+}
+
+.containBx .cardBx .imageBx img{
+    border: 2px solid rgb(106, 209, 111);
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (min-width: 320px) and (max-width: 480px){
@@ -1091,6 +1392,7 @@ p{
         margin-left: -8.5vw;
     }
 
+
     section .container1 .wrapper p{
         font-size: 8px;
         line-height: 3;
@@ -1266,7 +1568,7 @@ p{
     header .logo img{
         height: 30px;
         width: 100px;
-        margin-top: -7vh;
+        margin-top: -6vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1274,12 +1576,13 @@ p{
     }
 
     header .logo p{
-        height: 30px;
-        margin-top: -7vh;
+        font-size: 1em;
+        margin-top: -5vh;
         position: absolute;
+        margin-left: -12vw;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
         display: none;
     }
 
@@ -1307,6 +1610,10 @@ p{
         color: #000;
     }
 
+    .nav-list li{
+        margin-top: 20px;
+    }
+
     .nav-list li:hover > .sub-menu{
         width: 100vw;
         left: -3.2rem;
@@ -1330,17 +1637,7 @@ p{
         left: 32vw;
         border: 0.7rem solid transparent;
         border-bottom-color: black;
-    }
-
-    .services .box:hover{
-        background-color: #fff;
-        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
-        width: 300px;
-    }
-
-    .services .box:hover .contents1 h2,
-    .services .box:hover .contents1 p{
-        color: #000;
+        font-weight:bold;
     }
 
     iframe{
@@ -1408,6 +1705,7 @@ p{
     .contactinfo{
         margin-top: -35vh;
     }
+
     .img1{
         margin-bottom: 30vh;
         margin-top: 50vh;
@@ -1426,6 +1724,31 @@ p{
         float: right;
         margin-right: 0;
         margin-right: 10px;
+    }
+
+    .containers .slider{
+        margin-top: 3vh;
+    }
+
+    .containgrid{
+        display: block;
+    }
+
+    .containgrid .boxgrid{
+        position: relative;
+        max-width: 400px;
+        height: 320px;
+        background: #f1f1f1;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .containgrid .btngrid{
+        display: block;
+        margin-top: -860px;
+        margin-left: 220px;
     }
     
 }
@@ -1457,7 +1780,7 @@ p{
     header .logo img{
         height: 30px;
         width: 100px;
-        margin-top: 10vh;
+        margin-top: 11vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1465,12 +1788,14 @@ p{
     }
 
     header .logo p{
-        height: 30px;
-        margin-top: 10vh;
+        font-size: 2.5em;
+        margin-top: 15vh;
         position: absolute;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         display: none;
     }
 
@@ -1501,24 +1826,43 @@ p{
         line-height: 2.5;
     }
 
+    .btn2{
+        margin-left: -10px;
+    }
+    
+    .contactinfo .card{
+        margin-top: -30px;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 410px){
-    .btn1{
+    .btns{
         display: block;
-        margin: 10px;
-    }
-
-    .btn2{
-        margin-right: -44px;
-    }
-
-    .btn3{
-        margin-right: 120px;
+        margin: 10px auto;
     }
 
     .contain{
         height: 150px;
+    }
+
+    .containgrid .boxgrid{
+        width: 320px;
+    }
+
+    .containgrid .btngrid{
+        margin-left: 170px;
+    }
+
+    .services .box:hover{
+        width: 300px;
+    }
+}
+
+@media (width: 320px){
+
+    .containgrid .btngrid{
+        margin-left: 140px;
     }
 }
 
@@ -1587,7 +1931,7 @@ p{
     header .logo img{
         height: 80px;
         width: 100px;
-        margin-top: -7vh;
+        margin-top: -6vh;
         position: absolute;
         display: block;
         margin-left: 12vw;
@@ -1596,11 +1940,14 @@ p{
 
     header .logo p{
         height: 80px;
+        font-size: 2.2em;
         margin-top: -7vh;
+        margin-left: auto;
+        margin-right: auto;
         position: absolute;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
         display: none;
     }
 
@@ -1741,10 +2088,12 @@ p{
     header .logo p{
         height: 80px;
         margin-top: -7vh;
+        margin-left: auto;
+        margin-right: auto;
         position: absolute;
         display: block;
-        margin-left: 12vw;
-        width: 50%;
+        width: 100%;
+        text-align: center;
         display: none;
     }
 
