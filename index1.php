@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $contact = $_POST['number'];
     $message = $_POST['message'];
 
-    $mailTo = "ceo@sirivanaminfra.com";
+    $mailTo = "gokulkrishna.talla@gmail.com";
     $headers = "From: ".$mailFrom."\n\nName: ".$name."\n\n Message: ".$message."\n\n Contact: ".$contact;
     $txt = "Enquiry e-Mail";
 
